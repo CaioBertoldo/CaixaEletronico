@@ -6,4 +6,23 @@
 # Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 
 # e quatro notas de 1.
 
-saque = float(input("Valor do saque: "))
+def caixa(saque):
+    notas_disp = [100, 50, 10, 5 , 1]
+    qtd_notas = [0, 0, 0, 0, 0]
+
+    if saque < 10 or saque > 600:
+        print("Valor inválido, o valor mínimo é 10 reais e o valor máximo é 600 reais")
+        return 0
+    
+    for i in range(len(notas_disp)):
+        qtd_notas[i] = saque // notas_disp[i]
+        saque %= notas_disp[i]
+
+    print("Quantidade de notas: ")
+    for i in range(len(notas_disp)):
+        if qtd_notas[i] > 0:
+            print(f"{qtd_notas[i]} de notas de {notas_disp[i]} reais")
+
+saque = int(input("Valor que deseja sacar: "))
+caixa(saque)
+
