@@ -18,6 +18,7 @@ def caixa(saque):
         qtd_notas[i] = saque // notas_disp[i]
         saque %= notas_disp[i]
 
+    print("-=" * 20)
     print("Quantidade de notas: ")
     for i in range(len(notas_disp)):
         if qtd_notas[i] > 0:
