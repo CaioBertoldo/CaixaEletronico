@@ -25,5 +25,6 @@ def caixa(saque):
           print(f"{qtd_notas[i]} de notas de {notas_disp[i]} reais")
         
 
+# Main
 saque = int(input("Valor que deseja sacar: "))
 caixa(saque)
