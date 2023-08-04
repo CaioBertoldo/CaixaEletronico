@@ -7,7 +7,7 @@
 # e quatro notas de 1.
 
 def caixa(saque):
-    notas_disp = [100, 50, 10, 5 , 1]
+    notas_disp = [100, 50, 10, 5, 1]
     qtd_notas = [0, 0, 0, 0, 0]
 
     if (saque < 10 or saque > 600):
