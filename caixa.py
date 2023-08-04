@@ -22,7 +22,7 @@ def caixa(saque):
     print("Quantidade de notas: ")
     for i in range(len(notas_disp)):
         if (qtd_notas[i] > 0):
-          print(f"{qtd_notas[i]} de notas de {notas_disp[i]} reais")
+          print(f"{qtd_notas[i]} de notas de {notas_disp[i]} dolares")
         
 
 # Main
